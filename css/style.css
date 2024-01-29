@@ -1,0 +1,193 @@
+/* COMMON CSS START */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul , ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,ul,ol,p,span{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:arial;
+    background-color: black;
+}
+
+.container{
+    width: 700px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+
+/* COMMON CSS END */
+
+
+/* navbar */
+
+.navbar{
+    width: 100%;
+    background-color:#747264;
+    height: 50px;
+    box-shadow: rgb(148, 144, 144) 0px 1px 2px 0px, rgba(231, 231, 231, 0.651) 0px 2px 6px 2px;
+}
+
+.navbar.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+nav .menu{
+    width:86%;
+    text-align:right;
+
+}
+
+nav .menu ul li{
+    display:inline-block;
+    padding:15px 30px;
+   
+}
+
+nav .menu ul li a{
+    font-family:'Arimo', sans-serif;
+    font-weight:400;
+    font-size:20px;
+    color:black;
+}
+
+
+/* navbar */
+
+/* FAQ */
+
+#faqSelection{
+    margin: 80px 0px;
+    
+}
+
+#faqSelection .faq .faqHeader{
+    display: flex;
+    justify-content: space-between;
+    background-color:black;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eeeeee69;
+    cursor: pointer;
+}
+
+#faqSelection .faq .faqHeader h4{
+    color: white;
+    font-size: medium;
+    font-weight: normal;
+
+}
+
+#faqSelection .faq .faqBody{
+    padding: 10px 0px;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    transition: 0.5s;
+
+}
+
+#faqSelection .faq .faqBody p{
+    line-height: 25px;
+    font-size: 15px;
+    color:#bdc1c6;
+
+}
+
+#faqSelection .faq .faqBody img{
+    width: 90px;
+    height: 50px;
+   
+}
+
+#faqSelection .faq .faqBody .card{
+    display: flex;
+    cursor: pointer;
+    
+}
+
+
+#faqSelection .faq .faqBody .card h4{
+    font-size: 19px;
+    margin-left: 10px;
+    color:#bdc1c6;
+
+}
+
+
+#faqSelection .faq .faqBody h5{
+    font-size: 30px;
+    padding: 5px 0px;
+    color:#bdc1c6 ;
+}
+
+
+#faqSelection .faq.active .faqBody{
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    padding: 10px;
+
+}
+
+#faqSelection .faq.active .faqHeader span{
+    transform: rotate(180deg);
+    
+}
+
+#faqSelection .faq .faqHeader span{
+    color:#bdc1c6;
+    transition: 0.3s;
+}
+
+
+/* FAQ */
+
+/* preloader */
+
+.preloader{
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.preloader img{
+    width: 1350px;
+    height: 900px;
+
+}
+
+/* preloader */
+
